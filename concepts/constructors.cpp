@@ -19,9 +19,11 @@ class circle{
 
 }; 
 int main(){
-   
+    int r;
+    cout<<"Enter the radius:"<<endl;
+    cin>>r;
 
-    circle obj(5);
+    circle obj(r);
     obj.display();
     return 0;
 }
