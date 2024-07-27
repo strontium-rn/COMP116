@@ -17,7 +17,7 @@ class Polygon{
     public:
     int numberOfSides;
     Point centroid;    
-    Polygon(int side, Point center): numberOfSides(side), centroid(center){}
+    Polygon(int side, Point center): numberOfSides(side), centroid(center){}//constructors
 
     void display(){
         cout<<"Number of sides and centroid coordinates is:"<<numberOfSides centroid <<endl;
