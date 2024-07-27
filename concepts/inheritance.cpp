@@ -7,7 +7,14 @@
 #include<iostream>
 using namespace std;
 
+class Point{
+    public:
+    int x, y;
+    Point(int x=0, y=0): x(x), y(y) {}
+};
+
 class Polygon{
-    int numberOfSides, centroid;
-    
-}
+    public:
+    int numberOfSides;
+    Point centroid;    
+};
