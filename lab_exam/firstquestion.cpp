@@ -15,7 +15,7 @@ class ProductWithReview{
         int reviewCount;
 
     public:
-        //constructor
+        
         ProductWithReview(){name[0]='\0'; price=0.0; reviewCount=0;}
 
         void setName(char n[]){
