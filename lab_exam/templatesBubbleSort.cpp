@@ -17,7 +17,7 @@ int main(){
     int a[5] = {44,55,33,22,11};
     int n = sizeof(a)/sizeof(a[0]);
 
-    bubblesort<int>(a,n);
+    bubblesort(a,n);
     cout<<"Sorted Array: "<<endl;
     for (int i = 0; i < n; i++)
     {
