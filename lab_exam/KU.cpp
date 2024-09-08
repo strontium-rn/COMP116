@@ -28,10 +28,7 @@ class Person{
         void display(){
             cout<<"Name:"<<name;
             cout<<"Age:"<<age;
-            cout<<"Address:"<<address;
-            
-            
-           
+            cout<<"Address:"<<address;                  
         }
 };
 class Student: public Person{

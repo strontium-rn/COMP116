@@ -1,35 +1,25 @@
-//sorting an array using template
+//handling exception
 #include<iostream>
 using namespace std;
 
-template <typename T>void BubbleSort(T arr[], T n){
-    for (int i = 0; i < n-1; i++)
-    {
-        for (int j = 0; j < n-i-1; j++)
-        {
-            if (arr[j]> arr[j+1])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-            
-        }
-        
-    }
-    
-};
-
 int main(){
-    int arr[]={23,21,45,18,98};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    int numerator, denominator;
+    cout<<"Enter numerator and denominator"<<endl;
+    cin>>numerator>>denominator;
 
-    BubbleSort(arr,n);
 
-    cout<<"Sorted Array using template is: ";
-    for (int i = 0; i < n; i++)
+    try
     {
-        cout<<arr[i]<< " ";
+        if(denominator == 0){
+        throw 10;
+        }
+
+        int div = numerator/denominator;
+        cout<<"Result is: "<<div;
+    }
+    catch(int)
+    {
+        cout<<"There should not be 0 in deno";
     }
     return 0;
 }
