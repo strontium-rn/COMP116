@@ -22,11 +22,11 @@ class Time{
         int hour;
         int minute;
     public:
-        Time(): hour(0), minute(0){}
-        Time(int hr, int min): hour(hr), minute(min){
+        Time(): hour(0), minute(0){} //default
+        Time(int hr, int min): hour(hr), minute(min){//parametrized
             normalizeTime();
         }
-        Time(const Time& obj):hour(obj.hour), minute(obj.minute){}
+        Time(const Time& obj):hour(obj.hour), minute(obj.minute){}//copy
         void setHour(int hr){
             hour=hr;
         }
